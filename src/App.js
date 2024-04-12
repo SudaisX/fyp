@@ -12,7 +12,8 @@ function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path='/' element={<PhrasesPage />} />
+        <Route path='/' element={<CategoriesPage />} />
+        <Route path='/phrases' element={<PhrasesPage />} />
         <Route path='/categories' element={<CategoriesPage />} />
         <Route path='/categories/:categoryId' element={<SubCategoriesPage />} />
         <Route path='*' element={<ErrorPage />} />
