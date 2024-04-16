@@ -1,15 +1,21 @@
 // components/SubCategoriesPage.js
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 
 import { Grid, Card, CardContent, CardMedia, Typography, Button, Box, TextField, Chip, Paper } from "@mui/material";
 import CategoryCard from "../components/CategoryCard";
 import data from "../data/data";
+import LanguageContext from "../context";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 
 const SubCategoriesPage = () => {
   let { categoryId } = useParams();
   const navigate = useNavigate();
 
+  const languageContext = useContext(LanguageContext);
+
+  const [phrase, setPhrase] = useState("");
   const [text, setText] = useState("");
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
@@ -82,21 +88,28 @@ const SubCategoriesPage = () => {
             Back
           </Button>
           <Button variant='contained' disabled={currentPage < 2} sx={{ height: "220px", width: "200px", marginLeft: 2 }} onClick={handlePrevious}>
-            Previous
+            <ArrowBackIosIcon />
           </Button>
         </div>
 
         <div className='card-container'>
           {currentPhrases.map((card, index) => (
             // <CategoryCard categoryName={card.phrase} categoryImg={card.image.path} setText phrase={card.phrase} />
-            <div className='card eye-select' onClick={() => setText(card.phrase)}>
-              <img className='phrase-card-img' src={card.image.path} alt={card.phrase} />
-              <div class='phrase-text-overlay'>{card.phrase}</div>
+            <div className='card eye-select' onClick={() => setText(languageContext.language === "english" ? card.phrase_english : card.phrase)}>
+              <img
+                className='phrase-card-img'
+                src={card.image.path}
+                alt={languageContext.language === "english" ? card.phrase_english : card.phrase}
+              />
+              <div class='phrase-text-overlay'>
+                {languageContext.language === "english" ? card.phrase_english : languageContext.language === "urdu" ? card.urdu_phrase : card.phrase}
+              </div>
             </div>
           ))}
         </div>
         <Button variant='contained' className='eye-select' sx={{ height: "220px", width: "200px", marginRight: 2 }} onClick={handleNext}>
-          Next
+          {/* Next */}
+          <ArrowForwardIosIcon />
         </Button>
       </div>
     </>

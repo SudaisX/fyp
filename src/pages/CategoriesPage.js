@@ -4,6 +4,9 @@ import { useState, useEffect } from "react";
 import { Grid, Card, CardContent, CardMedia, Typography, Button, Box, TextField, Chip, Paper } from "@mui/material";
 import CategoryCard from "../components/CategoryCard";
 import data from "../data/data";
+import LanguageContext from "../context";
+import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
+import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
 
 const CategoriesPage = ({ category = "Categories" }) => {
   const [text, setText] = useState("");
@@ -50,7 +53,7 @@ const CategoriesPage = ({ category = "Categories" }) => {
           sx={{ height: "220px", width: "200px", marginLeft: 2 }}
           onClick={handlePrevious}
         >
-          Previous
+          <ArrowBackIosIcon />
         </Button>
 
         {/* <Grid container spacing={3} sx={{ padding: 5, paddingTop: "20px" }}> */}
@@ -68,7 +71,7 @@ const CategoriesPage = ({ category = "Categories" }) => {
           ))}
         </div>
         <Button variant='contained' className='eye-select' sx={{ height: "220px", width: "200px", marginRight: 2 }} onClick={handleNext}>
-          Next
+          <ArrowForwardIosIcon />
         </Button>
       </div>
     </>

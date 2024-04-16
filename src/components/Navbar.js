@@ -12,13 +12,23 @@ import Button from "@mui/material/Button";
 import Tooltip from "@mui/material/Tooltip";
 import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
+import { FormControl, InputLabel, Select } from "@mui/material";
+import LanguageContext from "../context";
 
 const pages = ["Home", "Categories", "Phrases"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function Navbar() {
+  const [language, setLanguage] = React.useState("english");
+
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
+
+  const languageContext = React.useContext(LanguageContext);
+
+  const handleLanguageChange = (event) => {
+    languageContext.setLanguage(event.target.value);
+  };
 
   const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
@@ -120,6 +130,22 @@ function Navbar() {
               </Button>
             ))}
           </Box>
+
+          <FormControl sx={{ marginRight: "20px" }}>
+            <InputLabel id='language-select-label'>Language</InputLabel>
+            <Select
+              sx={{ padding: 0 }}
+              labelId='language-select-label'
+              id='language-select'
+              value={languageContext.language}
+              label='Language'
+              onChange={handleLanguageChange}
+            >
+              <MenuItem value='english'>English</MenuItem>
+              <MenuItem value='urdu-roman'>Urdu (Roman)</MenuItem>
+              <MenuItem value='urdu'>Urdu</MenuItem>
+            </Select>
+          </FormControl>
 
           <Box sx={{ flexGrow: 0 }}>
             <Tooltip title='Open settings'>
