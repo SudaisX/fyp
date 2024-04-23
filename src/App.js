@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import CategoriesPage from "./pages/CategoriesPage";
@@ -11,6 +11,12 @@ import LanguageContext from "./context";
 
 function App() {
   const [language, setLanguage] = useState("urdu-roman");
+  useEffect(() => {
+    const videoElement = document.querySelector("#webgazerVideoContainer");
+    if (videoElement) {
+      videoElement.style.display = "none";
+    }
+  }, []);
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
