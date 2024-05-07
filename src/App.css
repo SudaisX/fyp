@@ -100,5 +100,5 @@ body {
 }
 
 #webgazerVideoContainer {
-  display: none;
+  display: none !important;
 }

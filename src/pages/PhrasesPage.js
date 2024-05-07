@@ -38,6 +38,7 @@ const PhrasesPage = ({ category = "Category Name" }) => {
 
   const handleNext = () => {
     setCurrentPage((prev) => Math.min(prev + 1, totalPages));
+    console.log(currentPhrases);
   };
 
   return (
@@ -62,7 +63,7 @@ const PhrasesPage = ({ category = "Category Name" }) => {
 
       <div className='container'>
         <Button variant='contained' disabled={currentPage < 2} sx={{ height: "220px", width: "140px" }} onClick={handlePrevious}>
-          Previous
+          Previousss
         </Button>
 
         <Grid container spacing={3} sx={{ padding: 5, paddingTop: "20px" }}>

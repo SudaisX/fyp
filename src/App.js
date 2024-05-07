@@ -11,12 +11,26 @@ import LanguageContext from "./context";
 
 function App() {
   const [language, setLanguage] = useState("urdu-roman");
-  useEffect(() => {
-    const videoElement = document.querySelector("#webgazerVideoContainer");
-    if (videoElement) {
-      videoElement.style.display = "none";
-    }
-  }, []);
+  // useEffect(() => {
+  //   const videoElement = document.querySelector("#webgazerVideoContainer");
+  //   if (videoElement) {
+  //     videoElement.style.display = "none";
+  //   }
+  // }, []);
+  // useEffect(() => {
+  //   const script = document.createElement("script");
+  //   script.src = "/script.js";
+  //   script.async = true;
+
+  //   document.body.appendChild(script);
+
+  //   script.onload = () => {
+  //     const videoElement = document.querySelector("#webgazerVideoContainer");
+  //     if (videoElement) {
+  //       videoElement.style.display = "none";
+  //     }
+  //   };
+  // }, []);
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>

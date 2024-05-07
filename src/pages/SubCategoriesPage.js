@@ -53,6 +53,7 @@ const SubCategoriesPage = () => {
   };
 
   const handleNext = () => {
+    console.log(phrase);
     setCurrentPage((prev) => Math.min(prev + 1, totalPages));
   };
 

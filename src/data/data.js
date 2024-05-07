@@ -8,7 +8,7 @@ const data = [
         id: 1,
         phrase: "Meri taangon mei dard ho raha hai, kia ap meri taangon ki maalish ker sakte hain?",
         image: {
-          path: "/visuals/comfort/comfort1.png",
+          path: "/visuals/comfort/muscle-cramps.png",
           width: 100,
           height: 100,
         },
@@ -32,7 +32,7 @@ const data = [
         id: 3,
         phrase: "Mere jism mein dard ho raha hai, kia ap meri stretching mei madad ker sakte hain?",
         image: {
-          path: "/visuals/comfort/comfort2.png",
+          path: "/visuals/comfort/muscle-stiffness.png",
           width: 100,
           height: 100,
         },
@@ -44,7 +44,7 @@ const data = [
         id: 4,
         phrase: "Mujhe ishafi araam kay liyay gardan k takiye ki zaroorat hai",
         image: {
-          path: "/visuals/comfort/comfort3.png",
+          path: "/visuals/comfort/neck-pillow.png",
           width: 100,
           height: 100,
         },
@@ -56,7 +56,7 @@ const data = [
         id: 5,
         phrase: "Kya aap meri wheel chair ko araam ke liye adjust kar sakte hain?",
         image: {
-          path: "/visuals/comfort/comfort4.png",
+          path: "/visuals/comfort/wheelchair.png",
           width: 100,
           height: 100,
         },
@@ -80,7 +80,7 @@ const data = [
         id: 7,
         phrase: "Meri sans ki naali ko saaf kerne k liye suction ki zaroorat hai",
         image: {
-          path: "/visuals/comfort/comfort6.png",
+          path: "/visuals/comfort/suction.png",
           width: 100,
           height: 100,
         },
@@ -99,7 +99,7 @@ const data = [
         id: 8,
         phrase: "Meri motion warzish ka waqt ho raha hai",
         image: {
-          path: "/visuals/8.png",
+          path: "/visuals/motion-exercises.png",
           width: 100,
           height: 100,
         },
@@ -111,7 +111,7 @@ const data = [
         id: 9,
         phrase: "Kya aap meri jismani therapy ki mashqon mein meri madad kar satke hain?",
         image: {
-          path: "/visuals/9.png",
+          path: "/visuals/physical-therapy.png",
           width: 100,
           height: 100,
         },
@@ -123,7 +123,7 @@ const data = [
         id: 10,
         phrase: "Kya aap meri speech therapy ki mashqon mein meri madad kar satke hain?",
         image: {
-          path: "/visuals/10.png",
+          path: "/visuals/speech-therapy.png",
           width: 100,
           height: 100,
         },
@@ -142,7 +142,7 @@ const data = [
         id: 11,
         phrase: "Mei theek hon.",
         image: {
-          path: "/visuals/11.png",
+          path: "/visuals/ok.png",
           width: 100,
           height: 100,
         },
@@ -154,7 +154,7 @@ const data = [
         id: 12,
         phrase: "Behtar mehsoos ker sakta/sakti hon.",
         image: {
-          path: "/visuals/12.png",
+          path: "/visuals/neutral.png",
           width: 100,
           height: 100,
         },
@@ -166,7 +166,7 @@ const data = [
         id: 13,
         phrase: "Aj bohot acha nahi mehsoos ho raha.",
         image: {
-          path: "/visuals/13.png",
+          path: "/visuals/not-good.png",
           width: 100,
           height: 100,
         },
@@ -178,7 +178,7 @@ const data = [
         id: 14,
         phrase: "Mein udaas hon.",
         image: {
-          path: "/visuals/14.png",
+          path: "/visuals/not-good.png",
           width: 100,
           height: 100,
         },
@@ -190,7 +190,7 @@ const data = [
         id: 15,
         phrase: "Mujhe ye pasand hai.",
         image: {
-          path: "/visuals/15.png",
+          path: "/visuals/like.png",
           width: 100,
           height: 100,
         },
@@ -209,7 +209,7 @@ const data = [
         id: 16,
         phrase: "Mujhe paani chahie.",
         image: {
-          path: "/visuals/16.png",
+          path: "/visuals/want-water.png",
           width: 100,
           height: 100,
         },
@@ -221,7 +221,7 @@ const data = [
         id: 17,
         phrase: "Mujhe khana chahie.",
         image: {
-          path: "/visuals/17.png",
+          path: "/visuals/want-food.png",
           width: 100,
           height: 100,
         },
@@ -233,7 +233,7 @@ const data = [
         id: 18,
         phrase: "Main apni ghizaaiyat ke zarooriyat aur ghizaai pasand k baray mein baat karna chahta/chahti hoon.",
         image: {
-          path: "/visuals/18.png",
+          path: "/visuals/discuss-diet.png",
           width: 100,
           height: 100,
         },
@@ -245,7 +245,7 @@ const data = [
         id: 19,
         phrase: "Mujhe narm khana chahie takay mujhe nigalne mei mushkilat ka saamna na ho.",
         image: {
-          path: "/visuals/19.png",
+          path: "/visuals/require-soft-food.png",
           width: 100,
           height: 100,
         },
@@ -264,7 +264,7 @@ const data = [
         id: 20,
         phrase: "Mujhe pata nahi.",
         image: {
-          path: "/visuals/20.png",
+          path: "/visuals/idk.png",
           width: 100,
           height: 100,
         },
@@ -276,7 +276,7 @@ const data = [
         id: 21,
         phrase: "Bistar theek kerdo.",
         image: {
-          path: "/visuals/21.png",
+          path: "/visuals/fix-bedsheet.png",
           width: 100,
           height: 100,
         },
@@ -288,7 +288,7 @@ const data = [
         id: 22,
         phrase: "Mujhe aisa nahi lagta.",
         image: {
-          path: "/visuals/22.png",
+          path: "/visuals/dont-think-so.png",
           width: 100,
           height: 100,
         },
@@ -296,23 +296,23 @@ const data = [
         urdu_phrase: "مجھے ایسا نہیں لگتا۔",
         category: "General communication",
       },
-      {
-        id: 23,
-        phrase: "Mujhe lagta hai is se koi farq nahi parta.",
-        image: {
-          path: "/visuals/23.png",
-          width: 100,
-          height: 100,
-        },
-        phrase_english: "It doesn't matter, I guess.",
-        urdu_phrase: "مجھے لگتا ہے اِس سے کوئی فرق نہیں پڑتا",
-        category: "General communication",
-      },
+      // {
+      //   id: 23,
+      //   phrase: "Mujhe lagta hai is se koi farq nahi parta.",
+      //   image: {
+      //     path: "/visuals/23.png",
+      //     width: 100,
+      //     height: 100,
+      //   },
+      //   phrase_english: "It doesn't matter, I guess.",
+      //   urdu_phrase: "مجھے لگتا ہے اِس سے کوئی فرق نہیں پڑتا",
+      //   category: "General communication",
+      // },
       {
         id: 24,
         phrase: "Mujhe ye di jiye.",
         image: {
-          path: "/visuals/24.png",
+          path: "/visuals/give-me.png",
           width: 100,
           height: 100,
         },
@@ -324,7 +324,7 @@ const data = [
         id: 25,
         phrase: "Mujhe ye nahi chahie.",
         image: {
-          path: "/visuals/25.png",
+          path: "/visuals/dont-want.png",
           width: 100,
           height: 100,
         },
@@ -336,7 +336,7 @@ const data = [
         id: 26,
         phrase: "Ye mere liye ahem hai.",
         image: {
-          path: "/visuals/26.png",
+          path: "/visuals/important.png",
           width: 100,
           height: 100,
         },
@@ -348,7 +348,7 @@ const data = [
         id: 27,
         phrase: "Ye itna zaroori nahi.",
         image: {
-          path: "/visuals/27.png",
+          path: "/visuals/not-important.png",
           width: 100,
           height: 100,
         },
@@ -360,7 +360,7 @@ const data = [
         id: 28,
         phrase: "Mujhey sun kar afsoos hua.",
         image: {
-          path: "/visuals/28.png",
+          path: "/visuals/sorry.png",
           width: 100,
           height: 100,
         },
@@ -372,7 +372,7 @@ const data = [
         id: 29,
         phrase: "Zabardast.",
         image: {
-          path: "/visuals/29.png",
+          path: "/visuals/great.png",
           width: 100,
           height: 100,
         },
@@ -384,7 +384,7 @@ const data = [
         id: 30,
         phrase: "Mujhe maloom hai.",
         image: {
-          path: "/visuals/30.png",
+          path: "/visuals/ik-it.png",
           width: 100,
           height: 100,
         },
@@ -393,22 +393,10 @@ const data = [
         category: "General communication",
       },
       {
-        id: 31,
-        phrase: "Jee.",
-        image: {
-          path: "/visuals/31.png",
-          width: 100,
-          height: 100,
-        },
-        phrase_english: "Yeah",
-        urdu_phrase: "جی",
-        category: "General communication",
-      },
-      {
         id: 32,
         phrase: "Acha.",
         image: {
-          path: "/visuals/32.png",
+          path: "/visuals/great.png",
           width: 100,
           height: 100,
         },
@@ -420,7 +408,7 @@ const data = [
         id: 33,
         phrase: "Aap ke baray mein kya khayaal hai ?.",
         image: {
-          path: "/visuals/33.png",
+          path: "/visuals/what-about-you.png",
           width: 100,
           height: 100,
         },
@@ -432,7 +420,7 @@ const data = [
         id: 34,
         phrase: "Is ke mutaliq up kya sochte hain?.",
         image: {
-          path: "/visuals/34.png",
+          path: "/visuals/what-about-you.png",
           width: 100,
           height: 100,
         },
@@ -444,7 +432,7 @@ const data = [
         id: 35,
         phrase: "Ap kia ker rahe/rahi thay/thin?.",
         image: {
-          path: "/visuals/35.png",
+          path: "/visuals/what-doing.png",
           width: 100,
           height: 100,
         },
@@ -456,7 +444,7 @@ const data = [
         id: 36,
         phrase: "Apne khandan k baray mei bataein.",
         image: {
-          path: "/visuals/36.png",
+          path: "/visuals/tell-about-fam.png",
           width: 100,
           height: 100,
         },
@@ -468,7 +456,7 @@ const data = [
         id: 37,
         phrase: "Ye kafi dilchasp baat hai, mujhe is k baray mei or bataein.",
         image: {
-          path: "/visuals/37.png",
+          path: "/visuals/tell-more.png",
           width: 100,
           height: 100,
         },
@@ -480,7 +468,7 @@ const data = [
         id: 38,
         phrase: "Shukriya.",
         image: {
-          path: "/visuals/38.png",
+          path: "/visuals/thank-you.png",
           width: 100,
           height: 100,
         },
@@ -492,7 +480,7 @@ const data = [
         id: 39,
         phrase: "Khushamdeed.",
         image: {
-          path: "/visuals/39.png",
+          path: "/visuals/welcome.png",
           width: 100,
           height: 100,
         },
@@ -504,7 +492,7 @@ const data = [
         id: 40,
         phrase: "Wapis se koshish kerte hain.",
         image: {
-          path: "/visuals/40.png",
+          path: "/visuals/try-again.png",
           width: 100,
           height: 100,
         },
@@ -516,7 +504,7 @@ const data = [
         id: 41,
         phrase: "Kisi dusre waqt kerte hain.",
         image: {
-          path: "/visuals/41.png",
+          path: "/visuals/another-time.png",
           width: 100,
           height: 100,
         },
@@ -540,7 +528,7 @@ const data = [
         id: 43,
         phrase: "Rukiye, meri baat/kaam poori/poora nahi hui/hua.",
         image: {
-          path: "/visuals/43.png",
+          path: "/visuals/wait.png",
           width: 100,
           height: 100,
         },
@@ -552,7 +540,7 @@ const data = [
         id: 44,
         phrase: "Ap kab wapis ayen ge?.",
         image: {
-          path: "/visuals/44.png",
+          path: "/visuals/when-back.png",
           width: 100,
           height: 100,
         },
@@ -564,7 +552,7 @@ const data = [
         id: 45,
         phrase: "Ap k anay ka shukria.",
         image: {
-          path: "/visuals/45.png",
+          path: "/visuals/thank-you.png",
           width: 100,
           height: 100,
         },
@@ -576,7 +564,7 @@ const data = [
         id: 46,
         phrase: "Wapis zaroor aiye ga.",
         image: {
-          path: "/visuals/46.png",
+          path: "/visuals/come-again.png",
           width: 100,
           height: 100,
         },
@@ -585,82 +573,10 @@ const data = [
         category: "General communication",
       },
       {
-        id: 47,
-        phrase: "Ap ko dobara dekh k acha laga.",
-        image: {
-          path: "/visuals/47.png",
-          width: 100,
-          height: 100,
-        },
-        phrase_english: "Great to see you again.",
-        urdu_phrase: "آپ کو دوبارہ دیکھ کے اچھا لگا",
-        category: "General communication",
-      },
-      {
-        id: 48,
-        phrase: "Jald milte hain.",
-        image: {
-          path: "/visuals/48.png",
-          width: 100,
-          height: 100,
-        },
-        phrase_english: "See you soon.",
-        urdu_phrase: "جلد ملتے ہیں",
-        category: "General communication",
-      },
-      {
-        id: 49,
-        phrase: "Mein jo number Dial kar raha hon woh hai _ _ _ _ _.",
-        image: {
-          path: "/visuals/49.png",
-          width: 100,
-          height: 100,
-        },
-        phrase_english: "The number I am dialing is _ _ _ _ _.",
-        urdu_phrase: "میں جو نمبر ڈائل کر رہا ہوں وہ ہے _ _ _ _ _",
-        category: "General communication",
-      },
-      {
-        id: 50,
-        phrase: "Ap kese hain?.",
-        image: {
-          path: "/visuals/50.png",
-          width: 100,
-          height: 100,
-        },
-        phrase_english: "How are you?",
-        urdu_phrase: "آپ کیسے ہیں ؟",
-        category: "General communication",
-      },
-      {
-        id: 51,
-        phrase: "Ap se jald hi baat hogi.",
-        image: {
-          path: "/visuals/51.png",
-          width: 100,
-          height: 100,
-        },
-        phrase_english: "I'll talk to you soon.",
-        urdu_phrase: "آپ سے جلد ہی بات ہوگی",
-        category: "General communication",
-      },
-      {
-        id: 52,
-        phrase: "Apni sahoolat k mutabiq mujhe dobara call ki jiye ga.",
-        image: {
-          path: "/visuals/52.png",
-          width: 100,
-          height: 100,
-        },
-        phrase_english: "Call me back when you can.",
-        urdu_phrase: "اپنی سہولت کے مطابق مجھے دوبارہ کال کی جئے گا",
-        category: "General communication",
-      },
-      {
         id: 53,
         phrase: "ALS hone se mujhe yeh samajh aya hai ke zindagi ke asaan lamhon ka maza layna kitna zaroori hai.",
         image: {
-          path: "/visuals/53.png",
+          path: "/visuals/importance-simple-moments.png",
           width: 100,
           height: 100,
         },
@@ -669,22 +585,10 @@ const data = [
         category: "General communication",
       },
       {
-        id: 54,
-        phrase: "ALS hone se meri fikar badh gayi hai un mushkilat ki jo merey mustaqbil mein aayengi, jin ka mujhay saamna karna hoga.",
-        image: {
-          path: "/visuals/54.png",
-          width: 100,
-          height: 100,
-        },
-        phrase_english: "Having ALS makes me worry about my future and its challenges I'll have to face.",
-        urdu_phrase: "الس ہونے سے میری فکر بڑھ گئی ہے ان مشکلات کی جو میرے مستقبل میں آئینگی ، جن کا مجھے سامنہ کرنا ہو گا .",
-        category: "General communication",
-      },
-      {
         id: 55,
         phrase: "Main apne khawab aur maqasid ko khone ka khauf mehsoos karta/karti hoon.",
         image: {
-          path: "/visuals/55.png",
+          path: "/visuals/afraid-losing.png",
           width: 100,
           height: 100,
         },
@@ -693,22 +597,10 @@ const data = [
         category: "General communication",
       },
       {
-        id: 56,
-        phrase: "Mein is baray mein nahi soch sakta/sakhti ke meri alamaat mazeed kaisay kharab ho rahi hain, yeh mere liye waqai pareshan kin hai.",
-        image: {
-          path: "/visuals/56.png",
-          width: 100,
-          height: 100,
-        },
-        phrase_english: "I cannot think about how my symptoms are getting worse, it is really upsetting for me.",
-        urdu_phrase: "میں اِس بارے میں نہیں سوچ سکتا / سختی كے میری علامات مزید کیسے خراب ہو رہی ہیں ، یہ میرے لیے واقعی پریشان کن ہے.",
-        category: "General communication",
-      },
-      {
         id: 57,
         phrase: "Mujhe bohat gussa aata hai ke mein woh kaam nahi kar sakta/sakhti jo mein pehle asaanai se karta/karti tha/thi.",
         image: {
-          path: "/visuals/57.png",
+          path: "/visuals/really-angry.png",
           width: 100,
           height: 100,
         },
@@ -884,7 +776,7 @@ const data = [
         id: 70,
         phrase: "Salam",
         image: {
-          path: "/visuals/70.png",
+          path: "/visuals/hello.png",
           width: 100,
           height: 100,
         },
@@ -896,7 +788,7 @@ const data = [
         id: 71,
         phrase: "Subha bekhair",
         image: {
-          path: "/visuals/71.png",
+          path: "/visuals/goodmorning.png",
           width: 100,
           height: 100,
         },
@@ -908,7 +800,7 @@ const data = [
         id: 72,
         phrase: "Shab bakhair",
         image: {
-          path: "/visuals/72.png",
+          path: "/visuals/goodnight.png",
           width: 100,
           height: 100,
         },
@@ -920,7 +812,7 @@ const data = [
         id: 73,
         phrase: "Khuda hafiz",
         image: {
-          path: "/visuals/73.png",
+          path: "/visuals/goodbye.png",
           width: 100,
           height: 100,
         },
@@ -930,13 +822,13 @@ const data = [
       },
       {
         id: 74,
-        phrase: "Mera naam ___ hai, mujhe bolne mei mushkil pesh ati hai, mei is machine k zarie baat kerta/kerti hon",
+        phrase: "Mera naam Sudais hai, mujhe bolne mei mushkil pesh ati hai, mei is machine k zarie baat kerta/kerti hon",
         image: {
-          path: "/visuals/74.png",
+          path: "/visuals/my-name.png",
           width: 100,
           height: 100,
         },
-        phrase_english: "This is ___, I have a speech problem. I use a machine to talk. Please be patient.",
+        phrase_english: "This is Sudais, I have a speech problem. I use a machine to talk. Please be patient.",
         urdu_phrase: "میرا نام  ___ ہے ، مجھے بولنے میں مشکل پیش آتی ہے ، میں اِس مشین کے زاریی بات کرتا / کرتی ہوں",
         category: "Greetings",
       },
@@ -947,23 +839,23 @@ const data = [
     category: "Help",
     image: "/visuals/category/help.png",
     data: [
-      {
-        id: 75,
-        phrase: "Mujhe aap ALS kay mareezon ki dekh bhaal ke baray mein maloomat faraham kar dein.",
-        image: {
-          path: "/visuals/75.png",
-          width: 100,
-          height: 100,
-        },
-        phrase_english: "I need you to provide information on ALS patient care",
-        urdu_phrase: "مجھے الس کے مریضوں کی دیکھ بھال كے بارے میں معلومات فراہم کر دیں .",
-        category: "Help",
-      },
+      // {
+      //   id: 75,
+      //   phrase: "Mujhe aap ALS kay mareezon ki dekh bhaal ke baray mein maloomat faraham kar dein.",
+      //   image: {
+      //     path: "/visuals/75.png",
+      //     width: 100,
+      //     height: 100,
+      //   },
+      //   phrase_english: "I need you to provide information on ALS patient care",
+      //   urdu_phrase: "مجھے الس کے مریضوں کی دیکھ بھال كے بارے میں معلومات فراہم کر دیں .",
+      //   category: "Help",
+      // },
       {
         id: 76,
         phrase: "Mujhe hilne mein madad chahie",
         image: {
-          path: "/visuals/76.png",
+          path: "/visuals/need-help-movement.png",
           width: 100,
           height: 100,
         },
@@ -971,35 +863,23 @@ const data = [
         urdu_phrase: "مجھے ہلنے میں مدد چاھیے",
         category: "Help",
       },
-      {
-        id: 77,
-        phrase: "Mein kisi se ALS ki dekh bhaal ki tajaweez aur madad ke baray mein baat karna chahoon ga/gi .",
-        image: {
-          path: "/visuals/77.png",
-          width: 100,
-          height: 100,
-        },
-        phrase_english: "I'd like to talk to someone about ALS caregiving tips and support.",
-        urdu_phrase: "میں کسی سے الس کی دیکھ بھال کی تجاویز اور مدد کے بارے میں بات کرنا چاہوں گا/گی.",
-        category: "Help",
-      },
-      {
-        id: 78,
-        phrase: "Kia ap mujhe samajh sakte hain?",
-        image: {
-          path: "/visuals/78.png",
-          width: 100,
-          height: 100,
-        },
-        phrase_english: "Do you understand me?",
-        urdu_phrase: "کیا آپ مجھے سمجھ سکتے ہیں ؟",
-        category: "Help",
-      },
+      // {
+      //   id: 78,
+      //   phrase: "Kia ap mujhe samajh sakte hain?",
+      //   image: {
+      //     path: "/visuals/78.png",
+      //     width: 100,
+      //     height: 100,
+      //   },
+      //   phrase_english: "Do you understand me?",
+      //   urdu_phrase: "کیا آپ مجھے سمجھ سکتے ہیں ؟",
+      //   category: "Help",
+      // },
       {
         id: 79,
         phrase: "Mujhe sans nahi aa rahi",
         image: {
-          path: "/visuals/79.png",
+          path: "/visuals/cant-breath.png",
           width: 100,
           height: 100,
         },
@@ -1007,23 +887,23 @@ const data = [
         urdu_phrase: "مجھے سانس نہیں آ رہی",
         category: "Help",
       },
-      {
-        id: 80,
-        phrase: "Barah e karam mujhe bataein ager apko meri baat ka matlab samajh nahi aya",
-        image: {
-          path: "/visuals/80.png",
-          width: 100,
-          height: 100,
-        },
-        phrase_english: "Please tell me if you don't understand what I am saying.",
-        urdu_phrase: "براہ کرم مجھے باتیں اگر آپکو میری بات کا مطلب سمجھ نہیں آیا",
-        category: "Help",
-      },
+      // {
+      //   id: 80,
+      //   phrase: "Barah e karam mujhe bataein ager apko meri baat ka matlab samajh nahi aya",
+      //   image: {
+      //     path: "/visuals/80.png",
+      //     width: 100,
+      //     height: 100,
+      //   },
+      //   phrase_english: "Please tell me if you don't understand what I am saying.",
+      //   urdu_phrase: "براہ کرم مجھے باتیں اگر آپکو میری بات کا مطلب سمجھ نہیں آیا",
+      //   category: "Help",
+      // },
       {
         id: 81,
         phrase: "Mujhe fori taur pe madad chahie",
         image: {
-          path: "/visuals/81.png",
+          path: "/visuals/emergency.png",
           width: 100,
           height: 100,
         },
@@ -1035,7 +915,7 @@ const data = [
         id: 82,
         phrase: "Mujhe suction ki zaroorat hai",
         image: {
-          path: "/visuals/82.png",
+          path: "/visuals/need-suction.png",
           width: 100,
           height: 100,
         },
@@ -1047,7 +927,7 @@ const data = [
         id: 83,
         phrase: "Mujhe doctor se milna hai",
         image: {
-          path: "/visuals/83.png",
+          path: "/visuals/need-doctor.png",
           width: 100,
           height: 100,
         },
@@ -1059,7 +939,7 @@ const data = [
         id: 84,
         phrase: "Mujhe check up ke liye appointment lainay ki zaroorat hai .",
         image: {
-          path: "/visuals/84.png",
+          path: "/visuals/make-appointment.png",
           width: 100,
           height: 100,
         },
@@ -1067,23 +947,23 @@ const data = [
         urdu_phrase: "مجھے چیک اپ کے لیے اپوائنٹمنت لینے کی ضرورت ہے۔",
         category: "Help",
       },
-      {
-        id: 85,
-        phrase: "Mujhe apna catheter bag khali chahie",
-        image: {
-          path: "/visuals/85.png",
-          width: 100,
-          height: 100,
-        },
-        phrase_english: "I need my catheter bag emptied.",
-        urdu_phrase: "مجھے اپنا کاتحیتیر بیگ خالی چاھیے",
-        category: "Help",
-      },
+      // {
+      //   id: 85,
+      //   phrase: "Mujhe apna catheter bag khali chahie",
+      //   image: {
+      //     path: "/visuals/85.png",
+      //     width: 100,
+      //     height: 100,
+      //   },
+      //   phrase_english: "I need my catheter bag emptied.",
+      //   urdu_phrase: "مجھے اپنا کاتحیتیر بیگ خالی چاھیے",
+      //   category: "Help",
+      // },
       {
         id: 86,
         phrase: "Mujhe bistar mein jagah badalne mein madad ki zaroorat hai",
         image: {
-          path: "/visuals/86.png",
+          path: "/visuals/need-help-movement.png",
           width: 100,
           height: 100,
         },
@@ -1091,23 +971,23 @@ const data = [
         urdu_phrase: "مجھے بستر میں جگہ بدلنے میں مدد کی ضرورت ہے",
         category: "Help",
       },
-      {
-        id: 87,
-        phrase: "Mujhe raal saaf kerne mein madad chahie",
-        image: {
-          path: "/visuals/87.png",
-          width: 100,
-          height: 100,
-        },
-        phrase_english: "I need assistance with managing my saliva.",
-        urdu_phrase: "مجھے رال صاف کرنے میں مدد چاھیے",
-        category: "Help",
-      },
+      // {
+      //   id: 87,
+      //   phrase: "Mujhe raal saaf kerne mein madad chahie",
+      //   image: {
+      //     path: "/visuals/87.png",
+      //     width: 100,
+      //     height: 100,
+      //   },
+      //   phrase_english: "I need assistance with managing my saliva.",
+      //   urdu_phrase: "مجھے رال صاف کرنے میں مدد چاھیے",
+      //   category: "Help",
+      // },
       {
         id: 88,
         phrase: "Kya aap meri gardan ko tasma (neck brace) pehnanay mein meri madad kar satke hain ?",
         image: {
-          path: "/visuals/88.png",
+          path: "/visuals/help-neck-brace.png",
           width: 100,
           height: 100,
         },
@@ -1119,7 +999,7 @@ const data = [
         id: 89,
         phrase: "Main baat chit ke aalaat ke baray mein janna chahta/chahti hoon",
         image: {
-          path: "/visuals/89.png",
+          path: "/visuals/discuss-options.png",
           width: 100,
           height: 100,
         },
@@ -1131,7 +1011,7 @@ const data = [
         id: 90,
         phrase: "Kya aap meri wheel chair ki tilt ko tarteeb dene mein madad kar sakte hain?",
         image: {
-          path: "/visuals/90.png",
+          path: "/visuals/adjust-wheelchair.png",
           width: 100,
           height: 100,
         },
@@ -1143,7 +1023,7 @@ const data = [
         id: 91,
         phrase: "Mere laptop/tablet ka charger le aiye",
         image: {
-          path: "/visuals/91.png",
+          path: "/visuals/fetch-charger.png",
           width: 100,
           height: 100,
         },
@@ -1155,7 +1035,7 @@ const data = [
         id: 92,
         phrase: "Mujhe meri wheelchair mein sar rakhne ki jagah chahie",
         image: {
-          path: "/visuals/92.png",
+          path: "/visuals/require-headrest.png",
           width: 100,
           height: 100,
         },
@@ -1167,7 +1047,7 @@ const data = [
         id: 93,
         phrase: "Kya aap meri ghair tanaffusiati hawa dene wali mask mein madad kar sakte hain?",
         image: {
-          path: "/visuals/93.png",
+          path: "/visuals/help-mask.png",
           width: 100,
           height: 100,
         },
@@ -1179,7 +1059,7 @@ const data = [
         id: 94,
         phrase: "Barah-e-karam meri feeding tube ko kisi maslay ke liye check karein.",
         image: {
-          path: "/visuals/94.png",
+          path: "/visuals/check-tube.png",
           width: 100,
           height: 100,
         },
@@ -1191,7 +1071,7 @@ const data = [
         id: 95,
         phrase: "Mei tawanai bachane k tareeqe janna chahta/chahti hon",
         image: {
-          path: "/visuals/95.png",
+          path: "/visuals/discuss-strategies.png",
           width: 100,
           height: 100,
         },
@@ -1203,7 +1083,7 @@ const data = [
         id: 96,
         phrase: "Mujhay merey aalaat kay liyay aankhon ke nazarye ki calibration check karne ki zarurat hai",
         image: {
-          path: "/visuals/96.png",
+          path: "/visuals/need-calibration.png",
           width: 100,
           height: 100,
         },
@@ -1215,7 +1095,7 @@ const data = [
         id: 97,
         phrase: "Barah-e-karam yeh yaqeeni banayein ke mera call bell ya emergency button dastiyab mein hai.",
         image: {
-          path: "/visuals/97.png",
+          path: "/visuals/assist-call.png",
           width: 100,
           height: 100,
         },
@@ -1227,7 +1107,7 @@ const data = [
         id: 98,
         phrase: "Mere saans nizam ke liye baqaida check-ups ki zarurat hai.",
         image: {
-          path: "/visuals/98.png",
+          path: "/visuals/require-checkups.png",
           width: 100,
           height: 100,
         },
@@ -1239,7 +1119,7 @@ const data = [
         id: 99,
         phrase: "Mujhey merey rishteydaroon ko video call kerne mein madad keren.",
         image: {
-          path: "/visuals/99.png",
+          path: "/visuals/assist-call.png",
           width: 100,
           height: 100,
         },
@@ -1251,7 +1131,7 @@ const data = [
         id: 100,
         phrase: "Mein rasai ko behtar bananay ke liye ghar mein honay wali tabdeelion ke ikhtiyarat talaash karna chahta hon.",
         image: {
-          path: "/visuals/100.png",
+          path: "/visuals/discuss-options-modifications.png",
           width: 100,
           height: 100,
         },
@@ -1263,7 +1143,7 @@ const data = [
         id: 101,
         phrase: "Kya aap mujhe ALS support group aur wusail ki maloomat faraham kar sakte hain?",
         image: {
-          path: "/visuals/101.png",
+          path: "/visuals/provide-info.png",
           width: 100,
           height: 100,
         },
@@ -1275,7 +1155,7 @@ const data = [
         id: 102,
         phrase: "Mujhe ek dekh bhaal karne wale ki zarurat hai jo meri dulhai aur zaati safai mein madad faraham kare",
         image: {
-          path: "/visuals/102.png",
+          path: "/visuals/need-assistance.png",
           width: 100,
           height: 100,
         },
@@ -1287,7 +1167,7 @@ const data = [
         id: 103,
         phrase: "Mera computer kaam nahi ker raha",
         image: {
-          path: "/visuals/103.png",
+          path: "/visuals/computer-not-working.png",
           width: 100,
           height: 100,
         },
@@ -1299,7 +1179,7 @@ const data = [
         id: 104,
         phrase: "Meri wheelchair kaam nai ker rahi",
         image: {
-          path: "/visuals/104.png",
+          path: "/visuals/adjust-wheelchair.png",
           width: 100,
           height: 100,
         },
@@ -1311,7 +1191,7 @@ const data = [
         id: 105,
         phrase: "Bara e meherbani mujhe meri dawai de di jiye",
         image: {
-          path: "/visuals/105.png",
+          path: "/visuals/pass-medications.png",
           width: 100,
           height: 100,
         },
@@ -1323,7 +1203,7 @@ const data = [
         id: 106,
         phrase: "Mujhe apne saans lene ke aale mein madad ki zarurat hai.",
         image: {
-          path: "/visuals/106.png",
+          path: "/visuals/need-assistance.png",
           width: 100,
           height: 100,
         },
@@ -1335,7 +1215,7 @@ const data = [
         id: 107,
         phrase: "Bara e meherbani laptop/tablet ki awaz tabdeel keren",
         image: {
-          path: "/visuals/107.png",
+          path: "/visuals/adjust-volume.png",
           width: 100,
           height: 100,
         },
@@ -1347,7 +1227,7 @@ const data = [
         id: 108,
         phrase: "Mujhe bistar mein janay k liye madad ki zaroorat hai",
         image: {
-          path: "/visuals/108.png",
+          path: "/visuals/assistance-bed.png",
           width: 100,
           height: 100,
         },
@@ -1359,7 +1239,7 @@ const data = [
         id: 109,
         phrase: "Mujhe bistar se bahir nikalne mein madad chahie",
         image: {
-          path: "/visuals/109.png",
+          path: "/visuals/require-help-bed.png",
           width: 100,
           height: 100,
         },
@@ -1371,7 +1251,7 @@ const data = [
         id: 110,
         phrase: "Kia ap mera communication board yahan laa sakte hain",
         image: {
-          path: "/visuals/110.png",
+          path: "/visuals/fetch-board.png",
           width: 100,
           height: 100,
         },
@@ -1383,7 +1263,7 @@ const data = [
         id: 111,
         phrase: "Kia ap mera mera graphic tablet yahan laa sakte hain?",
         image: {
-          path: "/visuals/111.png",
+          path: "/visuals/fetch-board.png",
           width: 100,
           height: 100,
         },
@@ -1395,7 +1275,7 @@ const data = [
         id: 112,
         phrase: "Mujhe aaraam ke liye, apne aaza ki position mein madad ki zaroorat hai .",
         image: {
-          path: "/visuals/112.png",
+          path: "/visuals/require-help-bed.png",
           width: 100,
           height: 100,
         },
@@ -1403,23 +1283,23 @@ const data = [
         urdu_phrase: "مجھے آرام کے لیے اپنے اعضاء کی پوزیشن میں مدد کی ضرورت ہے۔",
         category: "Help",
       },
-      {
-        id: 113,
-        phrase: "Kia ap mera laptop/tablet kareeb la sakte hain?",
-        image: {
-          path: "/visuals/113.png",
-          width: 100,
-          height: 100,
-        },
-        phrase_english: "Can you bring my laptop/tablet device closer?",
-        urdu_phrase: "کیا آپ میرا لیپ ٹاپ / ٹیبلیٹ قریب لا سکتے ہیں ؟",
-        category: "Help",
-      },
+      // {
+      //   id: 113,
+      //   phrase: "Kia ap mera laptop/tablet kareeb la sakte hain?",
+      //   image: {
+      //     path: "/visuals/113.png",
+      //     width: 100,
+      //     height: 100,
+      //   },
+      //   phrase_english: "Can you bring my laptop/tablet device closer?",
+      //   urdu_phrase: "کیا آپ میرا لیپ ٹاپ / ٹیبلیٹ قریب لا سکتے ہیں ؟",
+      //   category: "Help",
+      // },
       {
         id: 114,
         phrase: "Barah-e-karam mujhe yaad dilaien ke main apni dawaiyan waqt par loon.",
         image: {
-          path: "/visuals/114.png",
+          path: "/visuals/remind-medicine.png",
           width: 100,
           height: 100,
         },
@@ -1431,7 +1311,7 @@ const data = [
         id: 115,
         phrase: "Kisi ko bulao",
         image: {
-          path: "/visuals/115.png",
+          path: "/visuals/call-someone.png",
           width: 100,
           height: 100,
         },
@@ -1450,7 +1330,7 @@ const data = [
         id: 116,
         phrase: "Mujhe washroom jana hai",
         image: {
-          path: "/visuals/116.png",
+          path: "/visuals/washroom.png",
           width: 100,
           height: 100,
         },
@@ -1462,7 +1342,7 @@ const data = [
         id: 117,
         phrase: "Mujhe daant brush kerne hain",
         image: {
-          path: "/visuals/117.png",
+          path: "/visuals/brush-teeth.png",
           width: 100,
           height: 100,
         },
@@ -1474,7 +1354,7 @@ const data = [
         id: 118,
         phrase: "Mujhe nahana hai",
         image: {
-          path: "/visuals/118.png",
+          path: "/visuals/take-shower.png",
           width: 100,
           height: 100,
         },
