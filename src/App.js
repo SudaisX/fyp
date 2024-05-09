@@ -7,30 +7,26 @@ import ErrorPage from "./pages/ErrorPage";
 import SubCategoriesPage from "./pages/SubCategoriesPage";
 import Navbar from "./components/Navbar";
 import LanguageContext from "./context";
+import { useAuth } from "./authContext";
+import LoginScreen from "./pages/Login";
+import SignupScreen from "./pages/Signup";
+import setAuthToken from "./utils/setAuthToken";
+import ProfilePage from "./pages/ProfilePage";
 // import phrases from "./data/phrases.js";
 
 function App() {
   const [language, setLanguage] = useState("urdu-roman");
-  // useEffect(() => {
-  //   const videoElement = document.querySelector("#webgazerVideoContainer");
-  //   if (videoElement) {
-  //     videoElement.style.display = "none";
-  //   }
-  // }, []);
-  // useEffect(() => {
-  //   const script = document.createElement("script");
-  //   script.src = "/script.js";
-  //   script.async = true;
+  if (localStorage.token) {
+    setAuthToken(localStorage.token);
+  }
 
-  //   document.body.appendChild(script);
+  const { loadUser } = useAuth(); // Using the useAuth hook to access loadUser
 
-  //   script.onload = () => {
-  //     const videoElement = document.querySelector("#webgazerVideoContainer");
-  //     if (videoElement) {
-  //       videoElement.style.display = "none";
-  //     }
-  //   };
-  // }, []);
+  useEffect(() => {
+    if (localStorage.token) {
+      loadUser(); // Call loadUser when the component mounts
+    }
+  }, [loadUser]); // Dependency array with loadUser to ensure it's called only once or when loadUser changes
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
@@ -38,6 +34,9 @@ function App() {
         <Navbar />
         <Routes>
           <Route path='/' element={<CategoriesPage />} />
+          <Route path='/login' element={<LoginScreen />} />
+          <Route path='/register' element={<SignupScreen />} />
+          <Route path='/profile' element={<ProfilePage />} />
           <Route path='/phrases' element={<PhrasesPage />} />
           <Route path='/categories' element={<CategoriesPage />} />
           <Route path='/categories/:categoryId' element={<SubCategoriesPage />} />

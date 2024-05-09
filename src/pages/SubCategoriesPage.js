@@ -8,6 +8,7 @@ import data from "../data/data";
 import LanguageContext from "../context";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import { useAuth } from "../authContext";
 
 const SubCategoriesPage = () => {
   let { categoryId } = useParams();
@@ -20,6 +21,8 @@ const SubCategoriesPage = () => {
   const [isSpeaking, setIsSpeaking] = useState(false);
   const [currentPage, setCurrentPage] = useState(1);
   const itemsPerPage = 6; // Displaying 6 items per page
+
+  const { token } = useAuth();
 
   const speakText = () => {
     if (!window.speechSynthesis) {
@@ -37,7 +40,10 @@ const SubCategoriesPage = () => {
     if (text) {
       speakText();
     }
-  }, [text]);
+    if (!token) {
+      navigate("/login");
+    }
+  }, [text, token]);
 
   const phrases = data.find((item) => parseInt(item.id) === parseInt(categoryId))
     ? data.find((item) => parseInt(item.id) === parseInt(categoryId)).data
@@ -95,20 +101,33 @@ const SubCategoriesPage = () => {
 
         <div className='card-container'>
           {currentPhrases.map((card, index) => (
-            // <CategoryCard categoryName={card.phrase} categoryImg={card.image.path} setText phrase={card.phrase} />
-            <div className='card eye-select' onClick={() => setText(languageContext.language === "english" ? card.phrase_english : card.phrase)}>
+            // <CategoryCard categoryName={card.phrase} categoryImg={card.img} setText phrase={card.phrase} />
+            <div
+              className='card eye-select'
+              onClick={() => setText(languageContext.language === "english" ? card.phrase_eng : card.phrase_roman_urdu)}
+            >
               <img
                 className='phrase-card-img'
-                src={card.image.path}
-                alt={languageContext.language === "english" ? card.phrase_english : card.phrase}
+                src={card.img}
+                alt={languageContext.language === "english" ? card.phrase_eng : card.phrase_roman_urdu}
               />
               <div class='phrase-text-overlay'>
-                {languageContext.language === "english" ? card.phrase_english : languageContext.language === "urdu" ? card.urdu_phrase : card.phrase}
+                {languageContext.language === "english"
+                  ? card.phrase_eng
+                  : languageContext.language === "urdu"
+                  ? card.phrase_urdu
+                  : card.phrase_roman_urdu}
               </div>
             </div>
           ))}
         </div>
-        <Button variant='contained' className='eye-select' sx={{ height: "220px", width: "200px", marginRight: 2 }} onClick={handleNext}>
+        <Button
+          disabled={currentPage >= totalPages}
+          variant='contained'
+          className='eye-select'
+          sx={{ height: "220px", width: "200px", marginRight: 2 }}
+          onClick={handleNext}
+        >
           {/* Next */}
           <ArrowForwardIosIcon />
         </Button>

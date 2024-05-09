@@ -14,12 +14,15 @@ import MenuItem from "@mui/material/MenuItem";
 import AdbIcon from "@mui/icons-material/Adb";
 import { FormControl, InputLabel, Select } from "@mui/material";
 import LanguageContext from "../context";
+import { useAuth } from "../authContext";
+import { useNavigate } from "react-router-dom";
 
 const pages = ["Home", "Categories", "Phrases"];
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 function Navbar() {
   const [language, setLanguage] = React.useState("english");
+  const { token, logout, user } = useAuth();
 
   const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
@@ -45,6 +48,8 @@ function Navbar() {
     setAnchorElUser(null);
   };
 
+  const navigate = useNavigate();
+
   return (
     <AppBar sx={{ backgroundColor: "white", color: "black" }} position='static'>
       <Container maxWidth='xl'>
@@ -54,7 +59,7 @@ function Navbar() {
             variant='h6'
             noWrap
             component='a'
-            href='#app-bar-with-responsive-menu'
+            onClick={() => navigate("/")}
             sx={{
               mr: 2,
               display: { xs: "none", md: "flex" },
@@ -97,11 +102,14 @@ function Navbar() {
                 display: { xs: "block", md: "none" },
               }}
             >
-              {pages.map((page) => (
+              {/* {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
                   <Typography textAlign='center'>{page}</Typography>
                 </MenuItem>
-              ))}
+              ))} */}
+              <MenuItem key={"categories"} onClick={handleCloseNavMenu}>
+                <Typography textAlign='center'>Categories</Typography>
+              </MenuItem>
             </Menu>
           </Box>
           <AdbIcon sx={{ display: { xs: "flex", md: "none" }, mr: 1 }} />
@@ -109,7 +117,7 @@ function Navbar() {
             variant='h5'
             noWrap
             component='a'
-            href='#app-bar-with-responsive-menu'
+            onClick={() => navigate("/")}
             sx={{
               mr: 2,
               display: { xs: "flex", md: "none" },
@@ -121,61 +129,78 @@ function Navbar() {
               textDecoration: "none",
             }}
           >
-            LOGO
+            Assistive X
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
-            {pages.map((page) => (
-              <Button href={`/${page}`} key={page} onClick={handleCloseNavMenu} sx={{ my: 2, color: "black", display: "block" }}>
-                {page}
-              </Button>
-            ))}
-          </Box>
+          {token && (
+            <>
+              <Box sx={{ flexGrow: 1, display: { xs: "none", md: "flex" } }}>
+                {/* {pages.map((page) => (
+                  <Button href={`/${page}`} key={page} onClick={handleCloseNavMenu} sx={{ my: 2, color: "black", display: "block" }}>
+                    {page}
+                  </Button>
+                ))} */}
+                <Button onClick={() => navigate("/")} sx={{ my: 2, color: "black", display: "block" }}>
+                  Home
+                </Button>
+                <Button onClick={() => navigate("/categories")} sx={{ my: 2, color: "black", display: "block" }}>
+                  Categories
+                </Button>
+              </Box>
 
-          <FormControl sx={{ marginRight: "20px" }}>
-            <InputLabel id='language-select-label'>Language</InputLabel>
-            <Select
-              sx={{ padding: 0 }}
-              labelId='language-select-label'
-              id='language-select'
-              value={languageContext.language}
-              label='Language'
-              onChange={handleLanguageChange}
-            >
-              <MenuItem value='english'>English</MenuItem>
-              <MenuItem value='urdu-roman'>Urdu (Roman)</MenuItem>
-              <MenuItem value='urdu'>Urdu</MenuItem>
-            </Select>
-          </FormControl>
+              <FormControl sx={{ marginRight: "20px" }}>
+                <InputLabel id='language-select-label'>Language</InputLabel>
+                <Select
+                  sx={{ padding: 0 }}
+                  labelId='language-select-label'
+                  id='language-select'
+                  value={languageContext.language}
+                  label='Language'
+                  onChange={handleLanguageChange}
+                >
+                  <MenuItem value='english'>English</MenuItem>
+                  <MenuItem value='urdu-roman'>Urdu (Roman)</MenuItem>
+                  <MenuItem value='urdu'>Urdu</MenuItem>
+                </Select>
+              </FormControl>
 
-          <Box sx={{ flexGrow: 0 }}>
-            <Tooltip title='Open settings'>
-              <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                <Avatar alt='Remy Sharp' src='/static/images/avatar/2.jpg' />
-              </IconButton>
-            </Tooltip>
-            <Menu
-              sx={{ mt: "45px" }}
-              id='menu-appbar'
-              anchorEl={anchorElUser}
-              anchorOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
-              open={Boolean(anchorElUser)}
-              onClose={handleCloseUserMenu}
-            >
-              {settings.map((setting) => (
-                <MenuItem key={setting} onClick={handleCloseUserMenu}>
-                  <Typography textAlign='center'>{setting}</Typography>
-                </MenuItem>
-              ))}
-            </Menu>
-          </Box>
+              <Box sx={{ flexGrow: 0 }}>
+                <Tooltip title='Open settings'>
+                  <IconButton onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                    <Avatar alt='Remy Sharp' src={user ? user.avatar : "X"} />
+                  </IconButton>
+                </Tooltip>
+                <Menu
+                  sx={{ mt: "45px" }}
+                  id='menu-appbar'
+                  anchorEl={anchorElUser}
+                  anchorOrigin={{
+                    vertical: "top",
+                    horizontal: "right",
+                  }}
+                  keepMounted
+                  transformOrigin={{
+                    vertical: "top",
+                    horizontal: "right",
+                  }}
+                  open={Boolean(anchorElUser)}
+                  onClose={handleCloseUserMenu}
+                >
+                  {/* {settings.map((setting) => (
+                    <MenuItem key={setting} onClick={handleCloseUserMenu}>
+                      <Typography textAlign='center'>{setting}</Typography>
+                    </MenuItem>
+                  ))} */}
+                  <MenuItem onClick={() => navigate("/profile")}>
+                    <Typography textAlign='center'>Profile</Typography>
+                  </MenuItem>
+
+                  <MenuItem onClick={() => logout()}>
+                    <Typography textAlign='center'>Logout</Typography>
+                  </MenuItem>
+                </Menu>
+              </Box>
+            </>
+          )}
         </Toolbar>
       </Container>
     </AppBar>

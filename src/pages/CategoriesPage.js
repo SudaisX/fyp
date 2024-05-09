@@ -7,6 +7,8 @@ import data from "../data/data";
 import LanguageContext from "../context";
 import ArrowForwardIosIcon from "@mui/icons-material/ArrowForwardIos";
 import ArrowBackIosIcon from "@mui/icons-material/ArrowBackIos";
+import { useAuth } from "../authContext";
+import { useNavigate } from "react-router-dom";
 
 const CategoriesPage = ({ category = "Categories" }) => {
   const [text, setText] = useState("");
@@ -16,11 +18,21 @@ const CategoriesPage = ({ category = "Categories" }) => {
   const totalPages = Math.ceil(data.length / itemsPerPage);
   const currentCategories = data.slice((currentPage - 1) * itemsPerPage, currentPage * itemsPerPage);
 
+  const navigate = useNavigate();
+  const { token } = useAuth();
+
+  useEffect(() => {
+    if (!token) {
+      navigate("/login");
+    }
+  }, [token]);
+
   const handlePrevious = () => {
     setCurrentPage((prev) => Math.max(prev - 1, 1));
   };
 
   const handleNext = () => {
+    console.log("");
     setCurrentPage((prev) => Math.min(prev + 1, totalPages));
   };
 
@@ -67,10 +79,16 @@ const CategoriesPage = ({ category = "Categories" }) => {
 
         <div className='card-container'>
           {currentCategories.map((card, index) => (
-            <CategoryCard categoryName={card.category} categoryImg={card.image} categoryId={card.id} />
+            <CategoryCard categoryName={card.category} categoryImg={card.img} categoryId={card.id} />
           ))}
         </div>
-        <Button variant='contained' className='eye-select' sx={{ height: "220px", width: "200px", marginRight: 2 }} onClick={handleNext}>
+        <Button
+          disabled={currentPage >= totalPages}
+          variant='contained'
+          className='eye-select'
+          sx={{ height: "220px", width: "200px", marginRight: 2 }}
+          onClick={handleNext}
+        >
           <ArrowForwardIosIcon />
         </Button>
       </div>

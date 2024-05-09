@@ -61,6 +61,18 @@ body {
   display: inline-block;
 }
 
+.card-cat {
+  cursor: pointer;
+  /* transition: 0.3s; */
+  /* box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); */
+  border-radius: 20px;
+  text-align: center;
+  margin-bottom: 20px; /* Spacing between rows */
+  width: calc(33.33% - 10px); /* 33.33% width for each card with 10px spacing */
+  position: relative;
+  display: inline-block;
+}
+
 
 .card-container {
   display: flex;
@@ -87,7 +99,7 @@ body {
 
 
 .card:hover {
-  box-shadow: 0 14px 28px rgba(177, 13, 13, 0.25), 0 10px 10px rgba(226, 9, 9, 0.22);
+  box-shadow: 0 14px 28px rgba(13, 177, 98, 0.25), 0 10px 10px rgba(226, 9, 9, 0.22);
   transform: translateY(-10px);
 }
 
@@ -99,6 +111,101 @@ body {
   padding: 20px;
 }
 
+
+/* Profile Page */
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.profile-grid {
+  display: grid;
+  grid-template-areas:
+      'top top'
+      'about about'
+      'exp edu'
+      'github github';
+  grid-gap: 1rem;
+}
+
+.profile-top {
+  grid-area: top;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 40px;
+  color: white;
+}
+
+.profile-top img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.profile-top .icons a {
+  color: #fff;
+  margin: 0 0.3rem;
+}
+
+.profile-top .icons a:hover {
+  color: var(--dark-color);
+}
+
+.profile-about {
+  grid-area: about;
+  text-align: center;
+  background-color: #f4f4f4;
+  color: #333;
+  border: 1px solid #333;
+}
+
+.profile-about .skills {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-exp {
+  grid-area: exp;
+  border: 1px solid #333;
+  padding: 2rem;
+}
+
+.profile-edu {
+  grid-area: edu;
+  border: 1px solid #333;
+  padding: 2rem;
+}
+
+.profile-exp h2,
+.profile-edu h2 {
+  margin-bottom: 1rem;
+}
+
+.profile-exp > div,
+.profile-edu > div {
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: #ccc 1px dotted;
+}
+
+.profile-exp > div:last-child,
+.profile-edu > div:last-child {
+  border: 0;
+}
+
+.profile-exp p,
+.profile-edu p {
+  margin: 0.5rem 0;
+}
+
 #webgazerVideoContainer {
   display: none !important;
 }
+
+
